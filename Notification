@@ -1,0 +1,21 @@
+game.StarterGui:SetCore("SendNotification", {
+Title = "PROJETO LKB", -- you text 1
+Text = "OPEN SOURCE", -- you text 2
+Duration = 5, -- Time
+})
+
+-- other exemple: --
+--[[
+
+local Notification_Main_1 = "PROJETO LKB"
+local Notification_Main_1_2 = "OPEN SOURCE"
+local Notification_Main_Countdown_1 = 5
+
+
+game.StarterGui:SetCore("SendNotification", {
+Title = Notification_Main_1,
+Text = Notification_Main_1_2,
+Duration = Notification_Main_Countdown_1,
+})
+
+]]
