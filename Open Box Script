@@ -1,0 +1,47 @@
+-- 1 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Basic #1"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
+
+-- 2 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Basic #2"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
+
+-- 3 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Basic #3"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
+
+-- 4 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Uncommon"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
+
+-- 5 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Rare"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
+
+-- 6 --
+local args = {
+    [1] = "unbox_box",
+    [2] = "Legendary"
+}
+
+game:GetService("ReplicatedStorage").RemoteEventContainer.CommunicationF:InvokeServer(unpack(args))
