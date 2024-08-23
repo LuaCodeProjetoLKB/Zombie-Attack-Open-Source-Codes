@@ -1,0 +1,67 @@
+-- Exemple --
+Player.Chatted:Connect(function(m)
+    local message = m:lower()
+    if message == ";unfarm" or message == ";unFarm" or message == ";uf" then
+        _G.farm2 = false
+              game.StarterGui:SetCore("SendNotification", {
+Title = "Auto-Farm",
+Text = "false.",
+Duration = 2.3,
+})
+    elseif message == ";farm" or message == ";Farm" or message == ";f" then
+        _G.farm2 = true
+                game.StarterGui:SetCore("SendNotification", {
+Title = "Auto-Farm",
+Text = "true.",
+Duration = 2.3,
+})
+    elseif message == ";powerup" or message == ";Powerup" or message == ";Powerups" or message == ";powerups" or message == ";pw" or message == ";up" then
+        _G.AutoGetPowerups = true
+                game.StarterGui:SetCore("SendNotification", {
+Title = "powerups",
+Text = "true.",
+Duration = 2.3,
+})
+    elseif message == ";unpowerup" or message == ";unPowerup" or message == ";unPowerups" or message == ";unpowerups" or message == ";unpw" or message == ";unup" then
+        _G.AutoGetPowerups = false
+        game.StarterGui:SetCore("SendNotification", {
+Title = "powerups",
+Text = "false.",
+Duration = 2.3,
+})
+    elseif message == ";autoequip" or message == ";Autoequip" or message == ";at" or message == ";At" or message == ";Equip" or message == "equip" then
+        _G.autoequip = true
+        game.StarterGui:SetCore("SendNotification", {
+Title = "autoequip",
+Text = "true.",
+Duration = 2.3,
+})
+    elseif message == ";unautoequip" or message == ";unAutoequip" or message == ";unat" or message == ";unAt" or message == ";unEquip" or message == "unequip" then
+        _G.autoequip = false
+        game.StarterGui:SetCore("SendNotification", {
+Title = "autoequip",
+Text = "false.",
+Duration = 2.3,
+})
+    elseif message:sub(1, 5) == ";ds+ " then
+        local value = tonumber(message:sub(6))
+        if value and value >= 1 and value <= 150 then
+            _G.groundDistance = value
+        end
+    elseif message:sub(1, 5) == ";ds- " then
+        local value = tonumber(message:sub(6))
+        if value and value >= 1 and value <= 150 then
+            _G.groundDistance = -value
+        elseif message:sub(1, 5) == ";dt " then
+        local value = tonumber(message:sub(6))
+        if value and value >= 1 and value <= 100000 then
+          _G.dist = value
+           elseif message:sub(1, 5) == ";head " or "Head " or ";headsize " or ";Headsize " or "HeadSize " or ";H " or ";HS " or ";h " or ";H " or "Hitbox " or "hitbox " then
+        local value = tonumber(message:sub(6))
+        if value and value >= 3 and value <= 50 then
+          _G.HeadSize = value
+         end
+        end
+     end
+  end
+end)
