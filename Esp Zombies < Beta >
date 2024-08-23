@@ -1,4 +1,5 @@
 -- beta --
+-- random script idk --
 
 local function addEnemyESP(Zombie)
     local BillboardGui = Instance.new("BillboardGui")
